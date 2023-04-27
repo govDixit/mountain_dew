@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Mountain Dew</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="icon" type="image/png" href="images/icons/favicon.ico" />
+
+  <link rel="stylesheet" type="text/css" href="/static/vendor/bootstrap/css/bootstrap.min.css">
+
+  <link rel="stylesheet" type="text/css" href="/static/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" type="text/css" href="/static/fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+
+  <link rel="stylesheet" type="text/css" href="/static/vendor/animate/animate.css">
+
+  <link rel="stylesheet" type="text/css" href="/static/vendor/css-hamburgers/hamburgers.min.css">
+
+  <link rel="stylesheet" type="text/css" href="/static/vendor/select2/select2.min.css">
+
+  <link rel="stylesheet" type="text/css" href="/static/css/util.css">
+  <link rel="stylesheet" type="text/css" href="/static/css/select.css">
+  <link rel="stylesheet" type="text/css" href="/static/css/main.css">
+  
+</head>
+
+<body>
+  <div class="container-contact100" style="background-image: url('/static/images/bg-bg.png');">
+    <div class="wrap-contact100">
+      <form class="contact100-form validate-form" method="POST" action="/submit_form">
+        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"/>
+
+        <div class="wrap-input100 rs1-wrap-input100 validate-input col-sm-12">
+          <input class="input100" type="text" name="name" placeholder="Customer name">
+        </div>
+        <div class="wrap-input100 rs1-wrap-input100 validate-input col-sm-12">
+          <input class="input100" type="text" name="contact" placeholder="Contact number">
+        </div>
+        <div class="col-sm-6">
+          <div class="wrap-input100">
+            <input class="input100" type="text" name="age" placeholder="Age">
+          </div>
+        </div>
+        <div class="col-6">
+            <select class="input100  minimal" name="gender" id="gender" style="height: 65px;">
+              <option value="">Gender</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+            </select>
+        </div>
+
+        <div class="wrap-input100 rs1-wrap-input100 validate-input col-sm-12">
+          <input class="input100" type="email" name="email" placeholder="Email ID">
+        </div>
+
+        <div class="col-sm-12">
+          <div class="wrap-input100">
+            <select class="input100 minimal" name="city" id="city" style="height: 60px;">
+              <option value="">City</option>
+              <option value="Patiala">Patiala</option>
+              <option value="Mohali">Mohali</option>
+              <option value="Chandigarh">Chandigarh</option>
+              <option value="Ludhiana">Ludhiana</option>
+              <option value="Jalandhar">Jalandhar</option>
+              <option value="Amritsar">Amritsar</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- <div class="col-sm-12">
+          <div class="wrap-input100">
+            <select class="input100 minimal" name="activity" id="activity" style="height: 60px;  name="user_state"" >
+              <option value="">Activity</option>
+              <option value="Pull up">Pull up bar</option>
+              <option value="Hammer">Hammer</option>
+              <option value="Boxing">Boxing</option>
+              
+            </select>
+          </div>
+        </div> -->
+        <div class="col-sm-12">
+          <div class="wrap-input100 input100">
+              <label>Activity</label>
+              <div class=" checkbox col-sm-12">
+                  <label><input type="checkbox" name="activity" value="Pull up"> Pull up bar</label>
+                  
+              </div>
+              <div class=" checkbox col-sm-12">
+               
+                <label><input type="checkbox" name="activity" value="Hammer"> Hammer</label>
+              
+            </div>
+            <div class=" checkbox col-sm-12">
+             
+              <label><input type="checkbox" name="activity" value="Boxing"> Boxing</label>
+          </div>
+              
+          </div>
+      </div>
+      
+
+        <div class="wrap-input100 col-sm-12">
+          <textarea class="input100" name="feedback" placeholder="Feedback"></textarea>
+        </div>
+        
+        <div class="container-contact100-form-btn">
+          <div class="wrap-contact100-form-btn" style="float: right;">
+            <div class="contact100-form-bgbtn"></div>
+            <button type="submit" class="contact100-form-btn" >
+              Submit
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div id="dropDownSelect1"></div>
+
+  <script src="/static/vendor/jquery/jquery-3.2.1.min.js"></script>
+
+  <script src="/static/vendor/bootstrap/js/popper.js"></script>
+  <script src="/static/vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  <script src="/static/vendor/select2/select2.min.js"></script>
+
+  <script src="/static/js/main.js"></script>
+</body>
+
+</html>
