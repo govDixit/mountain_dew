@@ -99,7 +99,6 @@ ply==3.11
 prompt-toolkit==3.0.36
 protobuf==3.15.5
 psutil==5.9.4
-psycopg2==2.9.3
 pure-eval==0.2.2
 pyasn1==0.4.7
 pyasn1-modules==0.2.6
